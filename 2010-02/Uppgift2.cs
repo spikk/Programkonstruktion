@@ -60,7 +60,7 @@ namespace _2010_02
 
     }
 
-    class B : List<string>
+    public class B : List<string>
     {
 
     }
@@ -70,7 +70,7 @@ namespace _2010_02
         static void Main(string[] args)
         {
             a();
-            //b();
+            b();
             c();
             Console.Read();
         }
@@ -93,7 +93,8 @@ namespace _2010_02
 
         public static void b()
         {
-            MethodInfo[] mi = Type.GetType("B").GetMethods();
+            //nedanstående rad saknade namespace i originalversionen, då funkar det inte!
+            MethodInfo[] mi = Type.GetType("_2010_02.B").GetMethods();
             for (int i = 0; i < mi.Length; i++)
                 Console.WriteLine(" {0} ", mi[i].Name);
         }
