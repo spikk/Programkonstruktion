@@ -108,7 +108,7 @@ namespace _2010_02
             Console.WriteLine(p1 == p2);
         }
 
-
+/*
         static void Main(string[] args)
         {
             a();
@@ -117,6 +117,6 @@ namespace _2010_02
             d();
             e();
             Console.Read();
-        }
+        }*/
     }
 }
