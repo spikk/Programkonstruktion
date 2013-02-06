@@ -194,7 +194,7 @@ namespace _2012_03
 
             Console.WriteLine("--slut--");
 
-
+            Console.Read();
 
 
         }
